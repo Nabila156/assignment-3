@@ -281,8 +281,12 @@
         </div>
 
         <div class="grid lg:grid-cols-4 grid-cols-1 gap-3 mt-3 lg:mt-4">
-          <div>
+          <div class="hidden lg:block">
             <img class="bg-white h-[260px] lg:h-full w-full p-5 border-2 rounded-2xl" src="assets/img3.png" alt="">
+          </div>
+
+          <div class="block lg:hidden">
+            <img class="bg-white h-[260px] lg:h-full w-full p-5 border-2 rounded-2xl" src="assets/img5.png" alt="">
           </div>
 
           <div class="card lg:card-side bg-base-100 border-2 lg:col-span-2">
@@ -303,7 +307,11 @@
             </div>
           </div>
 
-          <div>
+          <div class="block lg:hidden">
+            <img class="bg-white h-[260px] lg:h-full w-full p-5 border-2 rounded-2xl" src="assets/img3.png" alt="">
+          </div>
+
+          <div class="block">
             <img class="bg-white h-[260px] lg:h-full w-full p-5 border-2 rounded-2xl" src="assets/img5.png" alt="">
           </div>
         </div>
@@ -457,7 +465,7 @@
           </div>
 
           <div>
-            <div class="lg:mx-[250px] mx-5 lg:mb-20">
+            <div class="lg:mx-[200px] mx-5 lg:mb-20">
               <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What materials do you use for barn houses, and why?</div>
@@ -670,17 +678,21 @@
           <p class="text-[#494949] text-base font-medium lg:w-[700px] mx-auto">Let’s discuss our next project to identify key objectives, outline strategies, and ensure we’re aligned on the vision and goals for successful outcomes.</p>
         </div>
 
-        <div class="lg:px-[120px] lg:pl-48">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-6">
-            <input type="text" placeholder="First Name*" class="input input-bordered w-full lg:max-w-md h-[60px] border-[#E9E9E9] rounded-[64px]" />
-            <input type="text" placeholder="Last Name*" class="input input-bordered w-full lg:max-w-md h-[60px] border-[#E9E9E9] rounded-[64px]" />
-            <input type="text" placeholder="Phone Number*" class="input input-bordered w-full lg:max-w-md h-[60px] border-[#E9E9E9] rounded-[64px]" />
-            <input type="text" placeholder="Email*" class="input input-bordered w-full lg:max-w-md h-[60px] border-[#E9E9E9] rounded-[64px]" />
-          </div>
-          <textarea class="textarea textarea-bordered mt-6 border-[#E9E9E9] rounded-[16px] lg:max-w-[970px] w-full h-[190px]" placeholder="Write your message here"></textarea>
-          <button class="btn text-[#1C1C1C] text-xl font-extrabold bg-[#ABEF5F] mt-6 rounded-[32px] lg:max-w-[970px] w-full">Send Mail<svg class="bg-[#1C1C1C] text-white p-[5px] w-8 rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-          </svg></button>
+        <div class="lg:px-[200px]">
+          <div class="grid grid-cols-1 gap-y-6">
+            <div class="grid lg:grid-cols-2 gap-x-4 gap-y-6">
+              <input type="text" placeholder="First Name*" class="input input-bordered h-[60px] border-[#E9E9E9] rounded-[64px]" />
+              <input type="text" placeholder="Last Name*" class="input input-bordered h-[60px] border-[#E9E9E9] rounded-[64px]" />
+              <input type="text" placeholder="Phone Number*" class="input input-bordered w-full h-[60px] border-[#E9E9E9] rounded-[64px]" />
+              <input type="text" placeholder="Email*" class="input input-bordered w-full h-[60px] border-[#E9E9E9] rounded-[64px]" />
+            </div>
+            
+            <textarea class="col-span-2 textarea textarea-bordered border-[#E9E9E9] rounded-[24px] h-[200px] resize-none" placeholder="Write your message here"></textarea>
+
+            <button class="btn col-span-2 text-[#1C1C1C] text-xl font-extrabold bg-[#ABEF5F] rounded-[32px] w-full">Send Mail<svg class="bg-[#1C1C1C] text-white p-[5px] w-8 rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg></button>
+          </div> 
         </div>
       </section>
 
